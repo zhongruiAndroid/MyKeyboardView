@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:ems="3"
+            android:gravity="center"
+            android:text="数字"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:ems="3"
+            android:gravity="center"
+            android:text="符号"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tvLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:ems="3"
+            android:gravity="center"
+            android:text="字母"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/ibKeyboardDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/keyboard_down" />
+    </LinearLayout>
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/keyboard_bg"
+        android:keyPreviewHeight="40dp"
+        android:keyPreviewOffset="8dp"
+        android:keyTextColor="@android:color/black"
+        android:keyTextSize="22sp"
+        android:shadowRadius="0"
+        android:background="#ebebeb"
+        />
+</LinearLayout>
